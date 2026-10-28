@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ПУЛЬС — фитнес-зал</title>
+<meta name="description" content="Фитнес-зал ПУЛЬС: тренажёры, групповые занятия, персональные тренировки. Первое занятие бесплатно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#top">ПУЛЬС</a>
+  <nav>
+    <a href="#zones">Зоны</a>
+    <a href="#schedule">Расписание</a>
+    <a href="#prices">Абонементы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="btn btn-small" href="#contacts">Записаться</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Сила<br>начинается<br>с первого<br>подхода</h1>
+    <div class="hero-side">
+      <p>Зал на 1200 м² с новым оборудованием, групповые занятия и тренеры, которые следят за вашей техникой. Первое занятие — бесплатно.</p>
+      <a class="btn" href="#contacts">Прийти на пробное</a>
+      <div class="plates" aria-hidden="true">
+        <span style="--s:150px"></span><span style="--s:120px"></span><span style="--s:90px"></span>
+        <i></i>
+        <span style="--s:90px"></span><span style="--s:120px"></span><span style="--s:150px"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="zones" id="zones">
+    <h2>Что внутри</h2>
+    <ul>
+      <li><b>Силовая зона</b><span>Стойки, свободные веса, гантели до 60 кг, рычажные тренажёры</span></li>
+      <li><b>Кардиозона</b><span>Беговые дорожки, эллипсы, велотренажёры с видом на улицу</span></li>
+      <li><b>Зал групповых программ</b><span>Йога, кроссфит, функциональный тренинг, растяжка</span></li>
+      <li><b>Персональные тренировки</b><span>Программа под вашу цель: похудение, масса, восстановление после травмы</span></li>
+      <li><b>Раздевалки и душевые</b><span>Шкафчики, фены, сауна — всё включено в абонемент</span></li>
+    </ul>
+  </section>
+
+  <section class="schedule" id="schedule">
+    <h2>Расписание групповых занятий</h2>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <ul class="slots" id="slots" aria-live="polite"></ul>
+  </section>
+
+  <section class="prices" id="prices">
+    <h2>Абонементы</h2>
+    <div class="price-row">
+      <article>
+        <h3>Месяц</h3>
+        <p class="sum">2 500 <small>сом</small></p>
+        <p>Безлимит с 7:00 до 23:00</p>
+      </article>
+      <article class="main">
+        <h3>3 месяца</h3>
+        <p class="sum">6 000 <small>сом</small></p>
+        <p>Безлимит, одна персональная тренировка и замер состава тела</p>
+      </article>
+      <article>
+        <h3>Год</h3>
+        <p class="sum">19 000 <small>сом</small></p>
+        <p>Безлимит, заморозка до 30 дней, гостевые визиты</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div>
+      <h2>Запишитесь на пробное занятие</h2>
+      <p>Оставьте имя и телефон — администратор позвонит и подберёт время.</p>
+      <p class="info">г. Бишкек, ул. Примерная, 1<br>Ежедневно 7:00–23:00<br><a href="tel:+996000000000">+996 000 000 000</a></p>
+    </div>
+    <form id="form">
+      <label>Имя<input name="name" required autocomplete="name"></label>
+      <label>Телефон<input name="phone" type="tel" required autocomplete="tel" placeholder="+996"></label>
+      <button class="btn" type="submit">Отправить в WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> ПУЛЬС. Фитнес-зал.</footer>
+<script src="script.js"></script>
+</body>
+</html>
